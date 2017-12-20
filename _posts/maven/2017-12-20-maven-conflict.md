@@ -14,7 +14,7 @@ Q:如何使用idea解决这个问题(Community Edition貌似没有这个功能)
 A:第一步，查看项目整体的依赖树，双击打开项目的POM文件，点击右键选择Diagrams->show dependencies，选择1:1显示，apply current layout  
   第二步，查找到有多个依赖的类包，选择不需要的版本，右键选择exclude  
   第三步，右键POM.xml，选择maven->reimport  
-   
+
 Q:如何用mvn命令查看依赖树  
 A:mvn -s E:\settings.xml dependency:tree
 
