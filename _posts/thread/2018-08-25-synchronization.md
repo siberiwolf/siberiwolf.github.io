@@ -30,7 +30,7 @@ Java的对象头包含mark word和指向类实例的指针，如果为数组，�
 一样会引起从用户态到内核态的切换)。
 
 
-为什么引入轻量级锁？
+为什么引入轻量级锁？<br/>
 1.空间考虑:jvm维护了一个全局的monitor cache table，key是一个对象实例的id，value是相应的monitor数据结构，在调用synchronized方法或者synchronized语句之后，会创建key-value的关联，monitor
 包含哪些信息???轻量级锁是在对象头的mark word中保存需要的信息，无保存monitor的空间开销
 
